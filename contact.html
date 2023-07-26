@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kenneth Sarah">
+    <meta name="description" content="Contact Information for the little taco shop located in Kansas.">
+    <title>Contact us - LTS</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    <nav aria-label="primary navigation">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+            </li>
+            <li>
+                <a href="/#menu">Our Menu</a>
+            </li>
+            <li>
+                <a href="hours.html">Shop Hours</a>
+            </li>
+        </ul>
+    </nav>
+
+    <figure>
+        <img src="img/tacos.jpeg" alt="Tacos in a plate" title="We love Tacos!!🌮🌮" width="400" height="267">
+        <figcaption>
+            Tacos In A Plate!!🌮🌮🌮
+        </figcaption>
+    </figure>
+    </header>
+    <hr>
+    <main>
+        <h2>Our Contact Form</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Send Us a Message</legend>
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="your name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="your email" required>
+                </p>
+            </fieldset>
+                <p>
+                    <label for="message"> Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </p>
+            
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>Copyright &copy; The Little Taco Shop🌮🌮🌮</p>
+    </footer>
+</body>
+
+</html>
