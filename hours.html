@@ -2,44 +2,51 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Kenneth Sarah">
         <meta name="description" content="Official Website for the little taco shop located in Kansas.">
         <title>The Little Taco Shop Hours</title>
-        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
         
     </head>
 
     <body>
         
-    <header>
-        <h1>
+    <header class="header">
+        <h1 class="header__h1">
             Little Taco Shop Hours
         </h1>
-        <nav>
-            <ul>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li>
-                    <a href="#/">Home</a>
+                    <a href="index.html">Home</a>
+                </li>
+                
+                <li>
+                    <a href="/#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="/#about">About LTS</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="/#menu">Our Menu</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About</a>
                 </li>
             </ul>
         </nav>
 
-        <figure>
-            <img src="img/tacos.jpeg" alt="A Tray of Tasty Tacos and a Cola" title="A Tray of Tasty Tacos and a Cola" width="400" height="400">
-                <figcaption>A Tray of Tasty Tacos and a Cola</figcaption>
-            </figure>
     </header>
 
-    <hr>
-    <main>
+    <section class="hero">
+        <figure>
+            <img src="img/tacoo2.jpg" alt="A Tray of Tasty Tacos and a Cola" title="A Tray of Tasty Tacos and a Cola" width="1000" height="667">
+                <figcaption class="offscreen">A Tray of Tasty Tacos</figcaption>
+            </figure>
+    </section>
+
+    <main class="main">
+        <article class="main__article">
+            <h2>Hours</h2>
         <p>We are open 7 days a week!</p>
         <dl>
             <dt>Sunday-Thursday</dt>
@@ -47,14 +54,15 @@
             <dt>Friday-Saturday</dt>
             <dd>11am-11pm</dd>
         </dl>
-        <p>
-            <a href="#top">Back to Top</a>
-        </p>
+        
+    </article>
     </main>
     
-    <hr>
-    <footer>
-    Copyright  &copy; <a href="hours.html">The Little Taco Shop</a> 
-</footer>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright  &copy; <time id="year"></time></span>
+         <span class="nowrap">Little Taco Shop</span>
+      </p>
+        </footer>
 </body>
 </html>

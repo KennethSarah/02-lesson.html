@@ -3,69 +3,91 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kenneth Sarah">
     <meta name="description" content="Contact Information for the little taco shop located in Kansas.">
     <title>Contact us - LTS</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    <nav aria-label="primary navigation">
-        <ul>
+    <header class="header">
+        <h1 class="header__h1">Contact Us</h1>
+    <nav class="header__nav">
+        <ul class="header__ul">
             <li>
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                <a href="/#menu">Menu</a>
             </li>
             <li>
-                <a href="/#menu">Our Menu</a>
+                <a href="hours.html">Hours</a>
             </li>
             <li>
-                <a href="hours.html">Shop Hours</a>
+                <a href="about.html">About</a>
             </li>
         </ul>
     </nav>
+    </header>
 
+<section class="hero">
     <figure>
-        <img src="img/tacos.jpeg" alt="Tacos in a plate" title="We love Tacos!!🌮🌮" width="400" height="267">
-        <figcaption>
+        <img src="img/tacoo1.jpg" alt="Tacos in a plate" title="We love Tacos!!🌮🌮" width="1000" height="667">
+        <figcaption class="offscreen">
             Tacos In A Plate!!🌮🌮🌮
         </figcaption>
     </figure>
-    </header>
-    <hr>
-    <main>
-        <h2>Our Contact Form</h2>
+</section>
 
-        <form action="https://httpbin.org/get" method="get">
-            <fieldset>
-                <legend>Send Us a Message</legend>
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="your name" required>
+    <main class="main">
+
+        <article class="main__article">
+
+            <h2>Our Location</h2>
+            <address>
+                555 Taco Temptation Lane, Suite T<br>
+                Kansas City, MO 55555-5555
+                <br><br>
+                Phone: <a href="tel:+55555555555">555-555-5555</a>
+            </address>
+        </article>
+<hr>
+        <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+
+        <form action="https://httpbin.org/get" method="get" class="contact__form">
+            <fieldset class="contact__fieldset">
+                <legend class="offscreen">Send Us a Message</legend>
+                <p class="contact__p">
+                    <label class="contact__label" for="name">Name</label>
+                    <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
                 </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="your email" required>
+                <p class="contact__p">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                </p>
+           
+                <p class="contact__p">
+                    <label class="contact__label" for="message"> Your Message:</label>
+                    <br>
+                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
                 </p>
             </fieldset>
-                <p>
-                    <label for="message"> Your Message:</label>
-                    <br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
-                </p>
             
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
+            <button class="contact__button" type="submit">Send</button>
+            <button class="contact__button" type="reset">Reset</button>
         </form>
+    </article>
+
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; The Little Taco Shop🌮🌮🌮</p>
-    </footer>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright  &copy; <time id="year"></time></span>
+         <span class="nowrap">Little Taco Shop</span>
+      </p>
+        </footer>
 </body>
 
 </html>
